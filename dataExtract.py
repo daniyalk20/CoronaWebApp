@@ -1,8 +1,5 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import requests
-import csv
 
 
 def getResponse():
@@ -77,10 +74,3 @@ def extractData(data):
     df = pd.DataFrame(data_frame)
     # return the data-frame
     return df
-
-
-data = getResponse()
-df = extractData(data)
-
-# creatung the csv file on specified location
-df.to_csv('resources/data.csv')
