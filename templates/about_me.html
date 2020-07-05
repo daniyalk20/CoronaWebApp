@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About Me | TRACK COVID19
+{% endblock title%}
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">About Me</h1>
+    <div class="card mb-3 mt-5">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="{{url_for('static', filename='me.jpg')}}" class="bd-placeholder-img" width="350px"
+                     height="100%" alt="Daniyal">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body"></div>
+                    <blockquote class="blockquote text-right card-text mr-3">
+                        <h5 class="card-title display-4">Daniyal K.</h5>
+                        <p class="mb-0">I am an enthusiastic student of Computer Science who has been striving to learn
+                        and work
+                        on several Artificial Intelligence Projects and researches. I have been doing several
+                        projects and researches in the domain of Web Development,
+                        Computer Networking, IoT, Algorithms and Machine Learning, Java Software development and
+                        Maintenance.</p><br/>
+                        <footer class="blockquote-footer card-text"><cite title="Source Title"><a href="http://www.daniyalk.com">Daniyal
+                        K.</a></cite><br/> Student and Researcher </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    {% endblock %}
